@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism site</title>
+    <link rel="stylesheet" href="style.css">
+    Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xoqgglne",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "rgb(223, 130, 24)"
+      },
+      button: {
+        backgroundColor: "rgb(223, 130, 24)"
+      }
+    }
+  });
+</script>
+</head>
+<body>
+
+    <!-- Home page -->
+
+  <section id="Homepage">
+           <section class="navbar">
+            <div class="navbar-logo">
+              <img src="./assets/Tourism site logo.png" alt="Logo" class="logo">
+          </div>
+            <div class="navlinks">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="">Services</a>
+                <a href="">Contact Us</a>
+                <button>Sign Up</button>
+            </div>
+           </section>
+         
+           <section class="hero">
+            <img src="./assets/buffalo.jpeg" alt="">
+          
+            <div class="hero-content">
+                <h1>Tuzuru Africa</h1>
+                <p>Unleashing Africa's spectacular sceneries</p>
+                <button>Call Now</button>
+            </div>
+           </section>
+
+           <section class="search">
+              <input type="search" placeholder="Places to visit" name="" id="">
+              <button>Search Places</button>
+           </section>
+         
+           <section class="destination">
+            <div class="spe-title">
+
+                <h2>Popular <span>Destinations</span></h2>
+            </div>
+            <div class="title-line">
+              <div class="tl-1"></div>
+              <div class="tl-2"></div>
+              <div class="tl-3"></div>
+            </div>
+            <div class="explore">
+              <p>
+                Explore the stunning landscapes and diverse wildlife of Kenya and Africa at an affordable price <br> from national reserve safaris to
+                traditional Swahili culture.Immerse yourself in the unique experiences this destination has to
+              offer.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="column">
+                  <img src="./assets/1690370583_59_Voyager_Beach_Mombasa_With_Bonfire_Adventures_2.jpg" alt="Image 1">
+                  <img src="./assets/pexels-photo-414144.jpeg" alt="Image 2">
+                  </div>
+                  <div class="column">
+                    <img src="./assets/elephants.jpeg" alt="Image 3">
+                  <img src="./assets/buffalo.jpeg" alt="Image 3">
+                  </div>
+                  <div class="column">
+                    <img src="./assets/lion.jpeg" alt="Image 3">
+                 <img src="./assets/pexels-photo-326055.jpeg" alt="Image 3">
+                </div>
+                
+                  
+                 
+                  <!-- Add more images as needed -->
+              
+           </section>
+
+  </section>
+
+  <!-- About us -->
+   
+  <script src="script.js"></script>  
+</body>
+</html>
