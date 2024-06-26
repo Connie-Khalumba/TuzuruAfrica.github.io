@@ -101,6 +101,12 @@ body{
 
 
 /* About Us Section */
+
+.section_title {
+    color: rgb(223, 130, 24);
+    align-items: center;
+}
+
 .about_us {
     padding: 60px 20px 120px;
     background: rgb(253, 253, 253);
@@ -127,47 +133,51 @@ body{
     width: 100%;
 }
 /* MISSION & VISION */
-.mission-vision {
-    background-color: #f4f4f4;
-    padding: 20px;
+.mission{
+    background-image: url('./assets/sunset.webp');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+.reject{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
-
-.mission-vision h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    
-}
-
-.mission-vision .mission,
-.mission-vision .vision {
-    margin: 20px 0;
-}
-
-.mission-vision h3 {
-    font-size: 1.5em;
+.reject .nun {
     margin-bottom: 10px;
-    color: rgb(223, 130, 24);
+}
+.reject .nun img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
 }
 
 
-.mission-vision, .why-choose-us, .team {
+.mission, .why-choose-us, .team {
     padding: 20px;
     text-align: center;
 }
 
-.mission-vision h2, .why-choose-us h2, .team h2 {
+.mission h2, .why-choose-us h2, .team h2 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.mission-vision .mission, .mission-vision .vision,
-.why-choose-us .core-values .value-card, 
+.mission .reject, .why-choose-us .core-values .value-card, 
 .team .team-container .team-member {
     margin: 20px 0;
 }
-
-.mission-vision h3, .why-choose-us .core-values .value-card h3, 
+ .why-choose-us .core-values .value-card h3, 
 .team .team-container .team-member h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -201,7 +211,7 @@ body{
 /* Core Values Styles */
 .core-values {
     position: absolute;
-    top: 170%;
+    top: 210%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -211,7 +221,9 @@ body{
 }
 
 .value-card {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color:  rgba(0,0,0,.5);
+    color: #fff;
+    /* opacity: ; */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -276,7 +288,7 @@ body{
 
 /* Footer Section */
 footer {
-    background: #060b1f;
+    background: rgb(223, 130, 24);
     color: white;
     padding: 60px 20px;
 }

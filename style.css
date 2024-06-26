@@ -203,6 +203,11 @@ body {
     color: white;
     margin-top: 50px;
 }
+.holiday-cards h1{
+    align-items: center;
+    color:  rgb(223, 130, 24);
+    font-size: 20px;
+}
 
 .cards-containers {
     display: flex;

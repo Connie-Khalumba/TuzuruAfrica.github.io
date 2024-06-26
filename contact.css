@@ -72,13 +72,16 @@ body{
 
 /* Contact Section */
 .contact {
-    background-image: url('./assets/pexels-ollivves-1078983.jpg');
+    background-image: url('./assets/beach.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
     padding: 60px 20px 100px;
 }
-/* .contact .section-title {
+ .section-title {
     color: white;
     text-align: center;
-} */
+}
 .contact_container {
     display: flex;
     gap: 50px;
@@ -166,11 +169,11 @@ footer {
 .footer_section .footer_logo a img {
     max-width: 60px;
 }
-.footer_section .footer_logo a h2 {
+ .footer_logo a img h2 {
     font-weight: 600;
     text-decoration: none;
 }
-/* .footer_section .footer_logo a h2 p {
+/*.footer_logo a h2  {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.6;
