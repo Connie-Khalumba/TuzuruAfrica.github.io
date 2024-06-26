@@ -1,3 +1,7 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
 body{
     background-color: #060b1f;
 }
@@ -94,14 +98,239 @@ body{
     text-shadow:rgb(223, 130, 24);
    
 }
-.info{
-    background-color:rgb(223, 130, 24);
-    margin-top: 0%;
-    padding: 0%;
+
+
+/* About Us Section */
+.about_us {
+    padding: 60px 20px 120px;
+    background: rgb(253, 253, 253);
+}
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.about_container .text_section {
+    max-width: 50%;
+}
+.about_container .text_section p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+}
+.about_container .image_section {
+    max-width: 45%;
+}
+.about_container .image_section img {
+    width: 100%;
+}
+/* MISSION & VISION */
+.mission-vision {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }
 
-.info p{
-    text-align: left;
-    display: block;
-    margin-right: 20px;
+.mission-vision h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+    margin: 20px 0;
+}
+
+.mission-vision h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(223, 130, 24);
+}
+
+
+.mission-vision, .why-choose-us, .team {
+    padding: 20px;
+    text-align: center;
+}
+
+.mission-vision h2, .why-choose-us h2, .team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.mission-vision .mission, .mission-vision .vision,
+.why-choose-us .core-values .value-card, 
+.team .team-container .team-member {
+    margin: 20px 0;
+}
+
+.mission-vision h3, .why-choose-us .core-values .value-card h3, 
+.team .team-container .team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.why-choose-us h2{
+    color: white;
+}
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Core Values Styles */
+.core-values {
+    position: absolute;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.value-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.value-card .icon {
+    margin-bottom: 10px;
+}
+
+.value-card .icon img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+/* TEAM SECTION */
+.team {
+    padding: 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+
+
+/* Footer Section */
+footer {
+    background: #060b1f;
+    color: white;
+    padding: 60px 20px;
+}
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_section h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+.footer_section .footer_logo a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+.footer_section .footer_logo a img {
+    max-width: 60px;
+}
+.footer_section .footer_logo a h2 {
+    font-weight: 600;
+    text-decoration: none;
+}
+.footer_section .useful_links ul li {
+    margin: 20px 0;
+}
+.footer_section .useful_links ul li a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+.footer_section .useful_links ul li a:hover {
+    text-decoration: underline;
+}
+.footer_section .contact_us ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer_section .contact_us ul li i {
+    font-size: 25px;
+}
+.footer_section .contact_us ul li span {
+    font-size: 17px;
+}
+.footer_section .follow_us i {
+    font-size: 26px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.footer_section .follow_us i:hover {
+    color: var(--secondary-color);
 }

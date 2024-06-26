@@ -1,17 +1,21 @@
-body{
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+body {
     background-color: #060b1f;
 }
 
 
-.navbar{
+.navbar {
     width: 70%;
     /* background-color: rgb(168, 166, 166); */
     margin: auto;
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .navbar-logo {
@@ -21,17 +25,16 @@ body{
 
 .navbar-logo .logo {
     height: 70px
-    
 }
 
-.navlinks > a{
+.navlinks>a {
     color: white;
     text-decoration: none;
     margin: 16px;
 
 }
 
-.navlinks button{
+.navlinks button {
     margin: 8px;
     padding: 12px 24px;
     font-size: 16px;
@@ -40,19 +43,22 @@ body{
     background-color: rgb(223, 130, 24);
     border-radius: 20px;
 }
+
 .hero {
     width: 100%;
     height: 80vh;
     overflow: hidden;
     position: relative;
 }
-.hero img{
+
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-.hero-content{
+
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,18 +66,21 @@ body{
     text-align: center;
     color: white;
 }
-.hero-content h1{
+
+.hero-content h1 {
     color: rgb(223, 130, 24);
     font-size: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
 }
-.hero-content p{
-    color:white;
+
+.hero-content p {
+    color: white;
     font-size: 30px;
     margin: 0%;
 }
-.hero-content button{
+
+.hero-content button {
     margin: 8px;
     padding: 12px 24px;
     font-size: 16px;
@@ -80,26 +89,29 @@ body{
     background-color: rgb(223, 130, 24);
     border-radius: 20px;
 }
-.hero-content button:hover{
+
+.hero-content button:hover {
     background-color: #060b1f;
 }
 
-.search{
+.search {
     width: 70%;
     margin: auto;
     margin-top: 20px;
 }
-.search input{
+
+.search input {
     width: 80%;
     padding: 10px;
     border-radius: 9999px;
-   
+
 }
-.search button{
+
+.search button {
     padding: 10px;
     border-radius: 9999px;
     background-color: rgb(223, 130, 24);
-    color: white; 
+    color: white;
 }
 
 
@@ -111,27 +123,31 @@ body{
     margin-bottom: 50px;
     top: 90%;
     left: 40%; */
-    
+
 }
-.spe-title h2 span{
+
+.spe-title h2 span {
     color: #e78f22;
     font-family: 'Quicksand', sans-serif;
 }
+
 .title-line {
     margin-top: -10px;
-    align-items: center; 
+    align-items: center;
     position: absolute;
     left: 44.5%;
     bottom: -1%;
-    
+
 
 }
+
 .tl-1 {
     width: 80px;
     height: 1px;
     display: inline-block;
     background: #eee;
 }
+
 .tl-2 {
     display: inline-block;
     height: 12px;
@@ -142,38 +158,184 @@ body{
     border: 1px solid #ebc131;
     border-radius: 50px;
 }
+
 .tl-3 {
     width: 80px;
     height: 1px;
     display: inline-block;
     background: #eee;
 }
-.explore{
+
+.explore {
     color: rgb(248, 248, 248);
     text-align: center;
     padding-top: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
-.column{
+
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
+
 .column img {
     margin-top: 8px;
     width: 100%;
     vertical-align: middle;
 }
-.destination{
+
+.destination {
     width: 70%;
     margin: auto;
     color: white;
 }
 
+.holiday-cards {
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+}
 
+.cards-containers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: rgb(107, 61, 8);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px 0;
+    width: 30%;
+    color: white;
+    box-shadow: 0 2px 4px rgba(244, 245, 245, 0.904);
+
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+
+.card-content h2 {
+    margin: 0 0 8px;
+}
+
+.card-content p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.card-content button {
+    margin: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #060b1f;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.card-content button:hover {
+    background-color: rgb(223, 130, 24);
+}
+
+
+
+/* Footer Section */
+footer {
+    background: rgb(223, 130, 24);
+    color: white;
+    padding: 60px 20px;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_section h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.footer_section .footer_logo a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.footer_section .footer_logo a img {
+    max-width: 60px;
+}
+
+.footer_section .footer_logo a h2 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* .footer_section .footer_logo a h2 p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    color: #eee;
+} */
+.footer_section .useful_links ul li {
+    margin: 20px 0;
+}
+
+.footer_section .useful_links ul li a {
+    color: var(--white-color);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.footer_section .useful_links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_section .contact_us ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_section .contact_us ul li i {
+    font-size: 25px;
+}
+
+.footer_section .contact_us ul li span {
+    font-size: 17px;
+}
+
+.footer_section .follow_us i {
+    font-size: 26px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer_section .follow_us i:hover {
+    color: var(--secondary-color);
+}

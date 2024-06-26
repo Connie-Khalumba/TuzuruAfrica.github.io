@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism site</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Box Icon Link for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xoqgglne",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "#060b1f"
+      },
+      button: {
+        backgroundColor: "rgb(223, 130, 24)"
+      }
+    }
+  });
+</script>
+</head>
+<body>
+   <!-- Home page -->
+
+   <section id="Homepage">
+    <section class="navbar">
+     <div class="navbar-logo">
+       <img src="./assets/Tourism site logo.png" alt="Logo" class="logo">
+   </div>
+     <div class="navlinks">
+         <a href="./index.html">Home</a>
+         <a href="./about.html">About Us</a>
+         <a href="./services.html">Services</a>
+         <a href="./contact.html">Contact Us</a>
+         <button>Sign Up</button>
+     </div>
+    </section>  
+
+     <!-- Gallery Section -->
+     <section class="gallery">
+        <h2 class="section_title">Gallery</h2>
+        <div class="section_container">
+          <div class="gallery_container">
+            <div class="gallery_items">
+              <img src="./assets/hallstatt-3609863_640.jpg" alt="Gallery Image" />
+            </div>
+            <div class="gallery_items">
+              <img src="./assets/elephants.jpeg" alt="Gallery Image" />
+            </div>
+            <div class="gallery_items">
+              <img src="./assets/buffalo.jpeg" alt="Gallery Image" />
+            </div>
+            <div class="gallery_items">
+              <img src="./assets/giraffe.jpeg" alt="Gallery Image" />
+            </div>
+            <div class="gallery_items">
+              <img src="./assets/zebra.jpeg" alt="Gallery Image" />
+            </div>
+            <div class="gallery_items">
+              <img src="./assets/pexels-photo-358457.jpeg" alt="Gallery Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <h2 class="section_title">Contact Us</h2>
+        <div class="section_container">
+          <div class="contact_container">
+            <div class="contact_form">
+              <form action="#">
+                <div class="field">
+                  <label for="Name">Full Name</label>
+                  <input type="text" id="Name" placeholder="Your Name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Your Email</label>
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="number">Your Number</label>
+                  <input
+                    type="number"
+                    id="number"
+                    placeholder="Your Contact Number"
+                    required
+                  />
+                </div>
+                <div class="field">
+                  <label for="textarea">Message</label>
+                  <textarea
+                    name="textarea"
+                    id="textarea"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button class="button" id="submit">Submit</button>
+              </form>
+            </div>
+            <div class="contact_text">
+              <div class="contact_items">
+                <i class="bx bx-current-location"></i>
+                <div class="contact_details">
+                  <h3>Our Location</h3>
+                  <p>Kenyatta Avenue, Nairobi</p>
+                </div>
+              </div>
+              <div class="contact_items">
+                <i class="bx bxs-envelope"></i>
+                <div class="contact_details">
+                  <h3>General Enquries</h3>
+                  <p>tuzuruafrica.gmail.com</p>
+                </div>
+              </div>
+              <div class="contact_items">
+                <i class="bx bxs-phone-call"></i>
+                <div class="contact_details">
+                  <h3>Call Us</h3>
+                  <p>+254 92728239</p>
+                </div>
+              </div>
+              <div class="contact_items">
+                <i class="bx bxs-time-five"></i>
+                <div class="contact_details">
+                  <h3>Our Timing</h3>
+                  <p>Mon-Sun : 10:00 AM - 7:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Footer Section -->
+  <footer>
+    <div class="section_container">
+      <div class="footer_section">
+        <div class="footer_logo">
+          <a href="index.html">
+            <img src="./assets/Tourism site logo.png" alt=" Logo" />
+            <h2>Tuzuru Africa</h2>
+            <!-- <p>
+                Explore the stunning landscapes and diverse wildlife of Kenya and Africa at an affordable price <br> from national reserve safaris to
+                traditional Swahili culture.Immerse yourself in the unique experiences this destination has to
+              offer.
+              </p> -->
+          </a>
+        </div>
+        <div class="useful_links">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./">Services</a></li>
+            <li><a href="#why">Contact Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="contact_us">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="bx bx-current-location"></i>
+              <span>Constance, Khalumba</span>
+            </li>
+            <li>
+              <i class="bx bxs-phone-call"></i> <span>+254 92728239</span>
+            </li>
+            <li>
+              <i class="bx bxs-time-five"></i>
+              <span>Mon-Sun : 10:00 AM - 7:00 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="follow_us">
+          <h3>Follow us</h3>
+          <i class="bx bxl-facebook-circle"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram-alt"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>  
+</body>
+</html>
+
+    
+</body>
+</html>
