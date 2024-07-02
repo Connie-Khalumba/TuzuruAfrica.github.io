@@ -1,0 +1,85 @@
+.section-footer {
+    background-color: var(--color-blue);
+    padding: var(--section-padding);
+  }
+  
+  .footer-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+    color: #fff;
+  }
+  
+  .contact-details .contact-data {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .contact-details .contact-data .social {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .contact-details .contact-data .social * {
+    padding-right: 1rem;
+  }
+  
+  .footer-nav .nav-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-nav ul li {
+    list-style: none;
+    padding: 1.5rem 0;
+  }
+  
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter__text {
+    margin-bottom: 1.6rem;
+  }
+  
+  .newsletter__input {
+    position: relative;
+  }
+  
+  .send-icon {
+    padding: 0.9rem;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  
+  .legel {
+    grid-column: 1/-1;
+    border-top: 2px solid #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  .legel .text {
+    padding: 1rem 0;
+  }
