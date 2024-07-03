@@ -211,7 +211,7 @@ body{
 /* Core Values Styles */
 .core-values {
     position: absolute;
-    top: 210%;
+    top: 220%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
