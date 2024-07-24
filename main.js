@@ -14,3 +14,41 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 3000);
+
+/**
+ * navbar toggle
+ */
+
+const header = document.querySelector("[data-header]");
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+
+navToggleBtn.addEventListener("click", function () {
+  header.classList.toggle("nav-active");
+  this.classList.toggle("active");
+});
+
+/**
+ * toggle the navbar when click any navbar link
+ */
+
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+
+for (let i = 0; i < navbarLinks.length; i++) {
+  navbarLinks[i].addEventListener("click", function () {
+    header.classList.toggle("nav-active");
+    navToggleBtn.classList.toggle("active");
+  });
+}
+// Get all elements with the class name "view"
+var buttons = document.querySelectorAll('.view');
+
+// Loop through each button and add a click event listener
+buttons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Get the link associated with the button
+    var link = this.getAttribute('data-link');
+
+    // Redirect to the specified link
+    window.location.href = link;
+  });
+});
