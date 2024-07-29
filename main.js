@@ -1,12 +1,33 @@
 let currentIndex = 0;
 
-const slides = document.querySelectorAll('.slides img');
-const totalSlides = slides.length;
+        const slides = document.querySelectorAll('.slides img');
+        const totalSlides = slides.length;
 
-function showSlide(index) {
-    const slider = document.querySelector('.slides');
-    slider.style.transform = `translateX(-${index * 100}%)`;
-}
+        function showSlide(index) {
+            const slider = document.querySelector('.slides');
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1; // Loop to the last slide
+            }
+            showSlide(currentIndex);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first slide
+            }
+            showSlide(currentIndex);
+        });
+
+        // Initialize the first slide
+        showSlide(currentIndex);
 
 function nextSlide() {
     currentIndex = (currentIndex + 1) % totalSlides;

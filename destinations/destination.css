@@ -42,6 +42,7 @@
 .card-title {
     font-size: 1.5em;
     margin: 0.5em 0;
+    color: #073961;
 }
 
 .card-description {
@@ -67,10 +68,11 @@
 
 /* Booking page styles */
 .booking-page {
+  background-image: url('../assets/sunset.webp') fixed no-repeat center;
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #fff;
+    background-color: #023c88;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -79,11 +81,12 @@
 .booking-page h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
+    color: #cf7b13;
 }
 
 .booking-page p {
     font-size: 1em;
-    color: #666;
+    color: #fff;
     margin-bottom: 1.5em;
 }
 
@@ -95,7 +98,7 @@
 .booking-form label {
     font-size: 1em;
     margin-bottom: 0.5em;
-    color: #333;
+    color: #fff;
 }
 
 .booking-form input,
@@ -113,8 +116,8 @@
 }
 
 .back-btn {
-    background-color: #ccc;
-    color: #333;
+    background-color: rgb(223, 130, 24);
+    color: #fff;
     padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
@@ -127,6 +130,18 @@
     background-color: #aaa;
 }
 
+.intaSendPayButton {
+  display: inline-block;
+    margin: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: rgb(223, 130, 24);
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
 
 /* FOOTER */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');

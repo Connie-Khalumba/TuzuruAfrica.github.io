@@ -152,7 +152,6 @@ body {
   }
   
   .section-footer {
-    background-color: rgb(88, 48, 10);
     padding: var(--section-padding);
   }
   
@@ -645,5 +644,5 @@ body {
   }
 
   .section-about{
-    background-color: #b6b0b0;
+    background-color: #023c88;
   }

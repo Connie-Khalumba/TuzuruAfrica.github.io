@@ -6,6 +6,8 @@
     <title>Tourism site</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tours.css" />
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
     <!-- Box Icon Link for Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -131,8 +133,9 @@
       <section class="holiday-cards">
         <h1>Holiday Destinations</h1>
         <div class="cards-containers">
-          <div class="card">
-            <img src="./assets/amboseli.jfif" alt="" />
+          <div class="card" data-place="Amboseli" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
+            <img src="./assets/amboseli.jfif" alt="Amboseli" />
             <div class="card-content">
               <h2>Amboseli National Park</h2>
               <p>
@@ -143,12 +146,13 @@
                 elephants.
               </p>
               <p>$1500</p>
-              <button>Book Now</button>
+              <button class="btn book-now">Book Now</button>
             </div>
           </div>
 
-          <div class="card">
-            <img src="./assets/hallstatt-3609863_640.jpg" alt="" />
+          <div class="card" data-place="Victoria Falls" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
+            <img src="./assets/pexels-tomas-anunziata-129267-695214.jpg" alt="Victoria falls" />
             <div class="card-content">
               <h2>Victoria Falls</h2>
               <p>
@@ -165,11 +169,35 @@
                 a different angle.
               </p>
               <p>$1500</p>
-              <button>Book Now</button>
+              <button class="btn book-now">Book Now</button>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" data-place="Kruger National Park" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
+            <img src="./assets/pexels-nicole-kruger-2345853-4005190.jpg" alt="Kruger NNP" />
+            <div class="card-content">
+              <h2>Kruger National Park</h2>
+              <p>
+                You'll spot plenty of animals – ranging from lions to rhinos to
+                elephants to giraffes – in this massive game preserve in South
+                Africa. Kruger National Park's network of paved roads makes it
+                easier to navigate than Serengeti, and it tends to be cheaper to
+                visit. However, its popularity (especially from May to October,
+                which are the best months for wildlife viewing) means you're
+                more likely to encounter hordes of visitors during game drives.
+                Consider visiting one of the park's private game reserves for a
+                more exclusive experience, and to ensure lodging, flight and
+                tour availability, you'll likely want to finalize your trip at
+                least a year in advance.
+              </p>
+              <p>$1500</p>
+              <button class="btn book-now">Book Now</button>
+            </div>
+          </div>
+
+          <div class="card" data-place="" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
             <img src="./assets/jordan-1846284_640.jpg" alt="" />
             <div class="card-content">
               <h2>Kruger National Park</h2>
@@ -187,14 +215,27 @@
                 least a year in advance.
               </p>
               <p>$1500</p>
-              <button>Book Now</button>
+              <button class="btn book-now">Book Now</button>
             </div>
           </div>
 
-          <div class="card">
-            <img src="./assets/jordan-1846284_640.jpg" alt="" />
+          <div class="card" data-place="Tsavo East" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
+            <img src="./assets/pexels-crimsonframe-5872117.jpg" alt="Tsavo East" />
             <div class="card-content">
-              <h2>Kruger National Park</h2>
+              <h2>Tsavo East</h2>
+              <p>
+                Take in the fantastic views of the Great Rift Valley and Nairobi at a distance from the top of these lush green hills. A short drive from the city, the hills are home to a wide variety of wildlife. Activities include birdwatching, picnicking, hiking, and ziplining, and you’ll also find restaurants and accommodations. You can camp out on the hills, but be sure to pack appropriately to shield yourself from the area’s strong winds. Hire a private guide to make the most of your adventure. Note that the rainy months are usually April, May, and November. – Tripadvisor</p>
+              <p>KES 5000</p>
+              <button class="btn book-now">Book Now</button>
+            </div>
+          </div>
+
+          <div class="card" data-place="Karura Forest" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+          culture">
+            <img src="./assets/free-photo-of-waterfall-in-a-forest.jpeg" alt="Karura" />
+            <div class="card-content">
+              <h2>Karura Forest</h2>
               <p>
                 You'll spot plenty of animals – ranging from lions to rhinos to
                 elephants to giraffes – in this massive game preserve in South
@@ -208,62 +249,15 @@
                 tour availability, you'll likely want to finalize your trip at
                 least a year in advance.
               </p>
-              <p>$1500</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./assets/jordan-1846284_640.jpg" alt="" />
-            <div class="card-content">
-              <h2>Kruger National Park</h2>
-              <p>
-                You'll spot plenty of animals – ranging from lions to rhinos to
-                elephants to giraffes – in this massive game preserve in South
-                Africa. Kruger National Park's network of paved roads makes it
-                easier to navigate than Serengeti, and it tends to be cheaper to
-                visit. However, its popularity (especially from May to October,
-                which are the best months for wildlife viewing) means you're
-                more likely to encounter hordes of visitors during game drives.
-                Consider visiting one of the park's private game reserves for a
-                more exclusive experience, and to ensure lodging, flight and
-                tour availability, you'll likely want to finalize your trip at
-                least a year in advance.
-              </p>
-              <p>$1500</p>
-              <button>Book Now</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <img src="./assets/jordan-1846284_640.jpg" alt="" />
-            <div class="card-content">
-              <h2>Kruger National Park</h2>
-              <p>
-                You'll spot plenty of animals – ranging from lions to rhinos to
-                elephants to giraffes – in this massive game preserve in South
-                Africa. Kruger National Park's network of paved roads makes it
-                easier to navigate than Serengeti, and it tends to be cheaper to
-                visit. However, its popularity (especially from May to October,
-                which are the best months for wildlife viewing) means you're
-                more likely to encounter hordes of visitors during game drives.
-                Consider visiting one of the park's private game reserves for a
-                more exclusive experience, and to ensure lodging, flight and
-                tour availability, you'll likely want to finalize your trip at
-                least a year in advance.
-              </p>
-              <p>$1500</p>
-              <button>Book Now</button>
+              <p>KES 1000</p>
+              <button class="btn book-now">Book Now</button>
             </div>
           </div>
         </div>
       </section>
     </section>
     <!-- Footer Section -->
-    <head>
-      <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
-    </head>
-    
+
     <body>
       <footer class="footer">
         <div class="container row">
@@ -310,6 +304,6 @@
     </body>
 
     <!-- script -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

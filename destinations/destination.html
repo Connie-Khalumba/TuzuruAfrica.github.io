@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tourism site</title>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../tours.css" />
   <link rel="stylesheet" href="../destinations/destination.css" />
+  <script src="./destinations.js"></script>
+
+  <!-- FontAwesome Kit -->
+  <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
 
   <!-- Box Icon Link for Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -74,90 +77,110 @@
       <h2 class="section_title">Tourism places </h2>
      <!-- <div class="cards-containers"></div> -->
       <div class="place-cards">
-        <div class="card" data-place="Maldives">
+        <div class="card" data-place="Maldives" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
           <img src="../assets/maldives.jpg" alt="Maldives" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Maldives</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/elephants.jpeg" alt="Maldives" />
+        <div class="card" data-place="Malindi" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/elephants.jpeg" alt="Malindi" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Malindi</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Watamu" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/pexels-pixabay-38280.jpg" alt="Watamu" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Watamu</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Diani" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="https://images.pexels.com/photos/2340308/pexels-photo-2340308.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Diani" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Diani</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Maasai Mara" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/pexels-ahmed-galal-225424125-12004882.jpg" alt="Maasai Mara" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Maasai Mara</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Amboseli" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/pexels-nicole-kruger-2345853-4005190.jpg" alt="Amboseli" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Amboseli</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Nakuru National park" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/istockphoto-616130718-2048x2048.jpg" alt="Nakuru National park" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Nakuru national Park</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Nairrobi National park" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="https://www.luxurylifestylemag.co.uk/wp-content/uploads/2022/12/bigstock-Maldives-Island-Sunset-Water-362687317.jpg" alt="Nairobi National park" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Nairobi National park</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
           </div>
         </div>
 
-        <div class="card" data-place="Maldives">
-          <img src="../assets/maldives.jpg" alt="Maldives" />
+        <div class="card" data-place="Karura Forest" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/free-photo-of-waterfall-in-a-forest.jpeg" alt="Karura Forest" />
           <div class="card-content">
-            <h3>Maldives</h3>
+            <h3 class="card-title">Karura Forest</h3>
+            <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+              culture.</p>
+            <button class="btn book-now">Book Now</button>
+          </div>
+        </div>
+
+        <div class="card" data-place="Ngong Hills" data-description="Discover the ancient ruins of the Maldives, stunning beaches, and a unique
+        culture">
+          <img src="../assets/maxresdefault-39.jpg" alt="Ngong Hills" />
+          <div class="card-content">
+            <h3 class="card-title">Ngong Hills</h3>
             <p class="card-description">Discover the ancient ruins of the Maldives, stunning beaches, and a unique
               culture.</p>
             <button class="btn book-now">Book Now</button>
@@ -168,9 +191,7 @@
       
 
     </section>
-    <head>
-    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
-  </head>
+  
   
   <body>
     <footer class="footer">
@@ -199,7 +220,7 @@
           <ul>
             <li><a href="#">Maasai Mara</a></li>
               <li><a href="#">Amboseli National Park</a></li>
-              <li><a href="#">Nairobii National Park</a></li>
+              <li><a href="#">Nairobi National Park</a></li>
               <li><a href="#">Diani</a></li>
               <li><a href="#">Watamu</a></li>
           </ul>
@@ -207,7 +228,7 @@
         <div class="footer-col">
           <h4>follow us</h4>
           <div class="social-links">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -216,6 +237,9 @@
       </div>
     </footer>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/intasend-inlinejs-sdk@3.0.4/build/intasend-inline.js"></script>
 </body>
 
 </html>
