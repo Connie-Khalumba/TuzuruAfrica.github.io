@@ -103,3 +103,18 @@ function calculateBookingAmount(bookingDetails) {
     const mealPrice = bookingDetails.meals === "yes" ? 500 : 0;
         return (basePrice + mealPrice) * bookingDetails.visitors * bookingDetails.days
     }
+
+    function saveBookingToFirebase(bookingDetails) {
+      const userId = "Lt5Ctf8r2ubVMgGduKcFSX0P6x03";
+      const dbRef = ref(database, "bookings/" + userId);
+      setInterval(dbRef, {
+        ...bookingDetails,
+      })
+
+      .then(() => {
+        console.log("Bookingg saves sucessfully");
+      })
+      .catch((error) => {
+        console.error("Error saving booking: ", error);
+      });
+    }
