@@ -6,6 +6,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+import { getFirestore } from "firebase/firestore";
 
 
 
@@ -24,6 +25,8 @@ const firebaseConfig = {
   const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
+
+const firestore = getFirestore(app);
 
 const main = document.getElementById("main");
 const returnBtn = document.getElementById("return-btn");

@@ -1,18 +1,22 @@
+
+let globalPlaceName = "";
+let globalPlaceDescription = "";
+
 document.addEventListener("DOMContentLoaded", () => {
     const bookButtons = document.querySelectorAll(".book-now");
-  
-    bookButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        const card = event.target.closest(".card");
-        const placeName = card.dataset.place;
-        const placeDescription = card.dataset.description;
-  
-        openBookingPage(placeName, placeDescription);
-      });
-    });
-  });
 
-  function openBookingPage(placeName, placeDescription) {
+    bookButtons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+            const card = event.target.closest(".card");
+            globalPlaceName = card.dataset.place;
+            globalPlaceDescription = card.dataset.description;
+
+            openBookingPage(globalPlaceName, globalPlaceDescription);
+        });
+    });
+});
+
+function openBookingPage(placeName, placeDescription) {
     const bookingPage = document.createElement("div");
     bookingPage.classList.add("booking-page");
     bookingPage.innerHTML = `
@@ -34,87 +38,100 @@ document.addEventListener("DOMContentLoaded", () => {
         </form>
         <button class="btn back-btn">Back</button>
     `;
-  
+
     document.body.innerHTML = "";
     document.body.appendChild(bookingPage);
-  
-    document.querySelector(".back-btn").addEventListener("click", () => {
-      location.reload(); // Reload the page to go back to the main list
-    });
-  
-    document
-      .querySelector(".booking-form")
-      .addEventListener("submit", handleBookingFormSubmit);
-  }
 
-  function handleBookingFormSubmit(event) {
+    document.querySelector(".back-btn").addEventListener("click", () => {
+        location.reload(); // Reload the page to go back to the main list
+    });
+
+    document
+        .querySelector(".booking-form")
+        .addEventListener("submit", handleBookingFormSubmit);
+}
+
+function handleBookingFormSubmit(event) {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
-  
+
     const bookingDetails = {
-      visitors: formData.get("visitors"),
-      days: formData.get("days"),
-      meals: formData.get("meals"),
-      additional: formData.get("additional"),
+        visitors: formData.get("visitors"),
+        days: formData.get("days"),
+        meals: formData.get("meals"),
+        additional: formData.get("additional"),
+        placeName: globalPlaceName,
+        placeDescription: globalPlaceDescription,
     };
-  
+
     // Proceed to IntaSend Payment
-  triggerIntaSendPayment(bookingDetails);
+    triggerIntaSendPayment(bookingDetails);
 }
 
 function triggerIntaSendPayment(bookingDetails) {
     const paymentButton = document.querySelector(".intaSendPayButton");
-  
+
     if (!paymentButton) {
-      console.error("IntaSend payment button not found");
-      return;
+        console.error("IntaSend payment button not found");
+        return;
     }
-  
+
     // Initialize IntaSend
     const intasend = new window.IntaSend({
-      publicAPIKey: "ISPubKey_test_ee5f4860-80fb-4670-a8ef-3258658af886",
-      live: false, // set to true when going live
+        publicAPIKey: "ISPubKey_test_ee5f4860-80fb-4670-a8ef-3258658af886",
+        live: false, // set to true when going live
     });
-  
+
     // Attach event listeners
     intasend.on("COMPLETE", (results) => {
-      console.log("Payment successful", results);
-      // Handle successful payment (e.g., save booking details to your database)
+        console.log("Payment successful", results);
+        saveBookingToFirebase(bookingDetails); // Save booking details to Firebase database
+        // Handle successful payment (e.g., save booking details to your database)
     });
     intasend.on("FAILED", (results) => {
-      console.log("Payment failed", results);
-      // Handle payment failure
+        console.log("Payment failed", results);
+        // Handle payment failure
     });
     intasend.on("IN-PROGRESS", (results) => {
-      console.log("Payment in progress", results);
+        console.log("Payment in progress", results);
     });
-  
+
     // Update the button attributes
     paymentButton.dataset.amount = calculateBookingAmount(bookingDetails); // Replace with actual amount based on bookingDetails
     paymentButton.dataset.currency = "KES";
-  
+
     // Simulate button click
     paymentButton.click();
-  }
+}
 
 function calculateBookingAmount(bookingDetails) {
     const basePrice = 2000;
     const mealPrice = bookingDetails.meals === "yes" ? 500 : 0;
-        return (basePrice + mealPrice) * bookingDetails.visitors * bookingDetails.days
-    }
+    return (basePrice + mealPrice) * bookingDetails.visitors * bookingDetails.days;
+}
 
-    function saveBookingToFirebase(bookingDetails) {
-      const userId = "Lt5Ctf8r2ubVMgGduKcFSX0P6x03";
-      const dbRef = ref(database, "bookings/" + userId);
-      setInterval(dbRef, {
-        ...bookingDetails,
-      })
+function saveBookingToFirebase(bookingDetails) {
+    const user = firebase.auth().currentUser;
 
-      .then(() => {
-        console.log("Bookingg saves sucessfully");
-      })
-      .catch((error) => {
-        console.error("Error saving booking: ", error);
-      });
+    if (user) {
+        const userId = user.uid;
+        const userEmail = user.email;
+
+        const dbRef = ref(database, "bookings/" + userId);
+        set(dbRef, {
+            userEmail,
+            userId,
+            ...bookingDetails,
+            timeStamp: firebase.firestore.Timestamp.now(),
+        })
+        .then(() => {
+            console.log("Booking saved successfully");
+        })
+        .catch((error) => {
+            console.error("Error saving booking:", error);
+        });
+    } else {
+        console.error("User not authenticated");
     }
+}

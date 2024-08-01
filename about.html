@@ -6,12 +6,46 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="tours.css" />
     <!-- Box Icon Link for Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Tourism site</title>
-  </head>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    /* paste this line in verbatim */
+    window.formbutton =
+      window.formbutton ||
+      function () {
+        (formbutton.q = formbutton.q || []).push(arguments);
+      };
+    /* customize formbutton below*/
+    formbutton("create", {
+      action: "https://formspree.io/f/xoqgglne",
+      title: "How can we help?",
+      fields: [
+        {
+          type: "email",
+          label: "Email:",
+          name: "email",
+          required: true,
+          placeholder: "your@email.com",
+        },
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?",
+        },
+        { type: "submit" },
+      ],
+      styles: {
+        title: {
+          backgroundColor: "#060b1f",
+        },
+        button: {
+          backgroundColor: "rgb(223, 130, 24)",
+        },
+      },
+    });
+  </script>
+</head>
 
   <body>
     <section id="Homepage">

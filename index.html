@@ -4,54 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourism site</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="tours.css" />
-
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="tours.css"/>
+     
     <!-- Box Icon Link for Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-      /* paste this line in verbatim */
-      window.formbutton =
-        window.formbutton ||
-        function () {
-          (formbutton.q = formbutton.q || []).push(arguments);
-        };
-      /* customize formbutton below*/
-      formbutton("create", {
-        action: "https://formspree.io/f/xoqgglne",
-        title: "How can we help?",
-        fields: [
-          {
-            type: "email",
-            label: "Email:",
-            name: "email",
-            required: true,
-            placeholder: "your@email.com",
-          },
-          {
-            type: "textarea",
-            label: "Message:",
-            name: "message",
-            placeholder: "What's on your mind?",
-          },
-          { type: "submit" },
-        ],
-        styles: {
-          title: {
-            backgroundColor: "#060b1f",
-          },
-          button: {
-            backgroundColor: "rgb(223, 130, 24)",
-          },
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
+    /* paste this line in verbatim */
+    window.formbutton =
+      window.formbutton ||
+      function () {
+        (formbutton.q = formbutton.q || []).push(arguments);
+      };
+    /* customize formbutton below*/
+    formbutton("create", {
+      action: "https://formspree.io/f/xoqgglne",
+      title: "How can we help?",
+      fields: [
+        {
+          type: "email",
+          label: "Email:",
+          name: "email",
+          required: true,
+          placeholder: "your@email.com",
         },
-      });
-    </script>
-  </head>
+        {
+          type: "textarea",
+          label: "Message:",
+          name: "message",
+          placeholder: "What's on your mind?",
+        },
+        { type: "submit" },
+      ],
+      styles: {
+        title: {
+          backgroundColor: "#060b1f",
+        },
+        button: {
+          backgroundColor: "rgb(223, 130, 24)",
+        },
+      },
+    });
+  </script>
+</head>
 
   <body>
     <!-- Home page -->
@@ -257,7 +253,10 @@
       </section>
     </section>
     <!-- Footer Section -->
-
+    <head>
+      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    </head>
+    
     <body>
       <footer class="footer">
         <div class="container row">
@@ -282,13 +281,13 @@
           </div>
           <div class="footer-col">
             <h4>Popular Destinations</h4>
-          <ul>
-            <li><a href="#">Maasai Mara</a></li>
-              <li><a href="#">Amboseli National Park</a></li>
-              <li><a href="#">Nairobii National Park</a></li>
-              <li><a href="#">Diani</a></li>
-              <li><a href="#">Watamu</a></li>
-          </ul>
+            <ul>
+              <li><a href="#">Maasai Mara</a></li>
+                <li><a href="#">Amboseli National Park</a></li>
+                <li><a href="#">Nairobii National Park</a></li>
+                <li><a href="#">Diani</a></li>
+                <li><a href="#">Watamu</a></li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4>follow us</h4>
@@ -302,8 +301,7 @@
         </div>
       </footer>
     </body>
-
-    <!-- script -->
-    <script src="main.js"></script>
   </body>
+
+  <script src="main.js"></script>
 </html>
