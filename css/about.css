@@ -139,7 +139,7 @@ body{
 }
 /* MISSION & VISION */
 .mission{
-    background-image: url('./assets/sunset.webp');
+    background-image: url('../assets/sunset.webp');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 

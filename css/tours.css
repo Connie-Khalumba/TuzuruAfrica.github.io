@@ -348,6 +348,7 @@ body {
   }
   .r-card__description {
     text-align: center;
+    margin-top: 2rem;
   }
   .r-card__rating {
     display: flex;
@@ -550,7 +551,7 @@ body {
   
   .section-hero {
     background-image: linear-gradient(rgba(3, 4, 94, 0.5), rgba(2, 61, 138, 0.6)),
-      url('./assets/offer-img.jpg');
+      url('../assets/offer-img.jpg');
     height: max(100vh, 60rem);
     background-position: center;
     background-size: cover;
@@ -603,7 +604,7 @@ body {
   
   .section-offer {
     padding: var(--section-padding);
-    background: url('./assets/sunset.webp') fixed no-repeat center;
+    background: url('../assets/sunset.webp') fixed no-repeat center;
     background-size: cover;
     position: relative;
     color: #fff;

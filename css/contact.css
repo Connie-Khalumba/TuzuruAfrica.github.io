@@ -72,7 +72,7 @@ body{
 
 /* Contact Section */
 .contact {
-    background-image: url('./assets/beach.jpeg');
+    background-image: url('../assets/beach.jpeg');
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -124,12 +124,14 @@ body{
     outline: none;
     cursor: pointer;
     border-radius: 50px;
-    background: var(--primary-color);
-    color: var(--white-color);
+    background-color: rgb(223, 130, 24);
+    color: white;
     font-size: 17px;
     font-weight: 600;
     transition: all 0.4s ease;
+    text-align: center;
 }
+   
 .contact_container .contact_form .button:hover {
     color: var(--primary-color);
     background: transparent;
@@ -195,6 +197,9 @@ ul {
   margin-bottom: 35px;
   font-weight: 500;
   position: relative;
+}
+.button{
+  
 }
 
 .footer-col h4::before {
