@@ -1,8 +1,8 @@
 #main > h1 {
   margin-bottom: 8%;
   text-align: center;
-  font-family: "Fredoka One", cursive;
-  color: #01a2a8;
+  font-family: "Quicksand", sans-serif;
+  color: #073961;
   letter-spacing: 0.1em;
 }
 
@@ -40,7 +40,8 @@ input, button {
   width: 40vw;
   margin: auto;
   height: 70vh;
-  margin-top: 1vh;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
 }
 
 #submit, #create-acct-btn {
