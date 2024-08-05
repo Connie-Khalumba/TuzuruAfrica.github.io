@@ -98,15 +98,14 @@
 .hero-content h1 {
     color: rgb(223, 130, 24);
     font-size: 70px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
+    align-items: center;
 }
 
 .hero-content p {
     color: white;
     font-size: 30px;
     margin: 0%;
-    font-family: "Quicksand", sans-serif;
 }
 
 .hero-content button {
@@ -178,10 +177,10 @@ button.call{
 }
 
 .title-line {
-    margin-top: -10px;
+    margin-top: -12px;
     align-items: center;
-    position: absolute;
-    left: 44.5%;
+    position: relative;
+    left: 42.5%;
     bottom: -1%;
 
 
@@ -291,7 +290,6 @@ button.call{
 .card-content p {
     margin: 8px 0;
     font-size: 15px;
-    font-family: "Quicksand", sans-serif;
 }
 
 .card-content button {
