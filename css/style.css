@@ -135,7 +135,7 @@
     text-decoration: none;
     text-align: center;
 }
-.call{
+button.call{
     align-items: center;
 }
 
@@ -216,7 +216,7 @@
     color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 20px;
-    font-family: 'Quicksand', sans-serif;
+    
 }
 
 .row {
