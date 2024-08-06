@@ -540,8 +540,8 @@ body {
   .heading {
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "Quicksand", sans-serif
   }
+  
   .heading--1 {
     font-size: clamp(2.5rem, 4vw, 4rem);
   }

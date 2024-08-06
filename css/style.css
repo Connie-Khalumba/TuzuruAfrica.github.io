@@ -98,8 +98,9 @@
 .hero-content h1 {
     color: rgb(223, 130, 24);
     font-size: 70px;
-    margin: 0%;
+    /* margin: 0%; */
     align-items: center;
+    margin-right: 10px;
 }
 
 .hero-content p {
