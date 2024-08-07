@@ -1,3 +1,11 @@
+body{
+  justify-content: center;
+  min-height: 100vh;
+  background: url(../assets/pexels-flickr-146083.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .places {
     padding: 2em;
     text-align: center;
@@ -6,7 +14,7 @@
 .section_title {
     font-size: 2em;
     margin-bottom: 1em;
-    color: white;
+    color: #073961
 }
 
 .place-cards {
@@ -68,13 +76,13 @@
 
 /* Booking page styles */
 .booking-page {
-  background-image: url('../assets/sunset.webp') fixed no-repeat center;
+  background: transparent;
     max-width: 600px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #023c88;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
     text-align: left;
 }
 
@@ -86,7 +94,7 @@
 
 .booking-page p {
     font-size: 1em;
-    color: #fff;
+    color: #073961;
     margin-bottom: 1.5em;
 }
 
