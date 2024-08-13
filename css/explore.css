@@ -41,7 +41,6 @@
   }
   
   .content h1 {
-    font-family: "Salsa", cursive;
     font-size: clamp(2rem, 3vw, 6rem);
     margin-bottom: 20px;
     opacity: 0;
