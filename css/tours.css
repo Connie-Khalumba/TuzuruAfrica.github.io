@@ -34,31 +34,85 @@ body {
 
 
 .navbar {
-    width: 100%;
-    background-color: #073961;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  background-color: #073961;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: 0.25s ease;
 
+}
+
+/* Make the navbar sticky */
+.navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it's on top of other content */
+  box-shadow: 0 4px 6px rgba(160, 92, 4, 0.1)
 }
 
 .navbar-logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-logo .logo {
-    height: 70px
+  height: 70px
+}
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
 }
 
 .navlinks>a {
-    color: white;
-    text-decoration: none;
-    margin: 16px;
+  color: white;
+  text-decoration: none;
+  margin: 16px;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  
 
 }
+
+.navlinks a:hover {
+  color: rgb(223, 130, 24);
+}
+
+.hide {
+  display: none;
+}
+
+/* MEDIA QUERIES NAVBAR */
+@media screen and (min-width: 600px) {
+  .navlinks {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+  }
+  .navlinks a {
+      display: inline-block;
+      padding: 15px 20px;
+  }
+  .hamburger {
+      display: none;
+  }
+}
+
 
 .button-link {
   display: inline-block;
